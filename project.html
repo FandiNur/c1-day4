@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="/assets/css/project.css">
+  <link rel="stylesheet" href="/assets/css/nav.css">
+  <title>Home Page</title>
+</head>
+<body>
+  <!-- navbar -->
+  <nav>
+    <div class="left-side" >
+      <a href="index.html">
+        <img src="/assets/image/logo.png">
+      </a>
+      
+      <ul class="nav-name">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="project.html">Project</a>
+        </li>
+      </ul>
+      
+    </div>
+    <div class="right-side" >
+      <a href="contact.html">CONTACT</a>
+    </div>
+  </nav>
+<!-- profil -->
+  <div class="landing-page-contact" >
+
+    <form onsubmit="addProject(event)">
+        <p>ADD PROJECT</p>
+        <div>
+          <label for="input-project-name">Project Name</label>
+          <input class="inputtext" id="input-project-name" type="text" placeholder="Project Name" >
+        </div>
+        <div style="display:flex;">
+          <div>
+            <label for="startDate">Start Date</label>
+            <input id="startDate" type="date">
+          </div>
+          <div>
+            <label for="endDate">End Date</label>
+            <input  id="endDate" type="date">
+          </div>
+      </div>
+      <div>
+        <label for="description">Description</label>
+        <textarea class="inputtext" id="description" placeholder="Description"></textarea>
+      </div>
+      <div>
+        <p>Tecnologies</p>
+        <div>
+          <input type="checkbox" id="input-react" >
+          <label for="input-react">react</label>
+          <input type="checkbox" id="input-js" >
+          <label for="input-js">java script</label>
+        </div>
+        <div>
+          <input type="checkbox" id="input-php" >
+          <label for="input-php">php</label>
+          <input type="checkbox" id="input-golang" >
+          <label for="input-golang">golang</label>
+        </div>
+      </div>
+      <div>
+        <label for="input-image"></label>
+        <input type="file" id="input-image">
+      </div>
+      <div class="button">
+        <button type="submit" >UPLOAD</button>
+      </div>
+     
+    </form>
+  </div>
+  <hr class="line" />
+
+        <!-- List Blog -->
+        <div id="contents" class="blog-list">
+        </div>
+  <!-- js -->
+  <script src="https://kit.fontawesome.com/9abab0ea8b.js" crossorigin="anonymous"></script>
+  <script src="/assets/js/project.js"></script>
+</body>
+</html
